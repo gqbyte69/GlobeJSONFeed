@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4vX-cA-Ngb">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="207.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="256.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aDm-tE-kGa">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
@@ -34,8 +34,20 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUL-V6-drX">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJa-0m-wbj">
                                                 <rect key="frame" x="16" y="187" width="382" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slD-ge-vmM">
+                                                <rect key="frame" x="16" y="211.5" width="382" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUL-V6-drX">
+                                                <rect key="frame" x="16" y="236" width="382" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -45,9 +57,13 @@
                                             <constraint firstAttribute="trailing" secondItem="aDm-tE-kGa" secondAttribute="trailing" id="33Y-U5-pyY"/>
                                             <constraint firstItem="aDm-tE-kGa" firstAttribute="leading" secondItem="4vX-cA-Ngb" secondAttribute="leading" id="90X-JH-T9T"/>
                                             <constraint firstAttribute="trailing" secondItem="yUL-V6-drX" secondAttribute="trailing" constant="16" id="H5g-72-IOT"/>
+                                            <constraint firstItem="HJa-0m-wbj" firstAttribute="leading" secondItem="4vX-cA-Ngb" secondAttribute="leading" constant="16" id="MAA-PF-fK2"/>
+                                            <constraint firstAttribute="trailing" secondItem="HJa-0m-wbj" secondAttribute="trailing" constant="16" id="XFJ-1g-fj0"/>
                                             <constraint firstItem="yUL-V6-drX" firstAttribute="leading" secondItem="4vX-cA-Ngb" secondAttribute="leading" constant="16" id="eh8-sH-xTL"/>
                                             <constraint firstItem="Lm0-j9-gQn" firstAttribute="leading" secondItem="4vX-cA-Ngb" secondAttribute="leading" constant="16" id="lOi-Km-HfX"/>
+                                            <constraint firstAttribute="trailing" secondItem="slD-ge-vmM" secondAttribute="trailing" constant="16" id="mVj-4P-ONr"/>
                                             <constraint firstAttribute="trailing" secondItem="Lm0-j9-gQn" secondAttribute="trailing" constant="16" id="r4y-Kw-wuk"/>
+                                            <constraint firstItem="slD-ge-vmM" firstAttribute="leading" secondItem="4vX-cA-Ngb" secondAttribute="leading" constant="16" id="uEd-Zq-5bn"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -72,7 +88,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="genreLabel" destination="HJa-0m-wbj" id="3hU-h4-yf1"/>
                         <outlet property="imageView" destination="aDm-tE-kGa" id="UbW-sa-quS"/>
+                        <outlet property="studioLabel" destination="slD-ge-vmM" id="Fdg-Ne-tu2"/>
                         <outlet property="synopsisLabel" destination="yUL-V6-drX" id="ocQ-Hy-b7N"/>
                         <outlet property="titleLabel" destination="Lm0-j9-gQn" id="cFI-Tn-3tN"/>
                     </connections>

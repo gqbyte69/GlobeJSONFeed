@@ -10,6 +10,10 @@ import Foundation
 protocol AnimeDetailsViewModelProtocol {
   var titleText: String? { get }
 
+  var genreText: String? { get }
+
+  var studiosText: String? { get }
+
   var synopsisText: String? { get }
 
   var imageURL: URL? { get }

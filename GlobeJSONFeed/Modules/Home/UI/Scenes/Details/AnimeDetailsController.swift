@@ -13,6 +13,8 @@ final class AnimeDetailsController: UIViewController {
 
   @IBOutlet private(set) var imageView: UIImageView!
   @IBOutlet private(set) var titleLabel: UILabel!
+  @IBOutlet private(set) var genreLabel: UILabel!
+  @IBOutlet private(set) var studioLabel: UILabel!
   @IBOutlet private(set) var synopsisLabel: UILabel!
 }
 
@@ -33,6 +35,8 @@ private extension AnimeDetailsController {
     title = viewModel.titleText
 
     titleLabel.text = viewModel.titleText
+    genreLabel.text = viewModel.genreText
+    studioLabel.text = viewModel.studiosText
     synopsisLabel.text = viewModel.synopsisText
 
     if let url = viewModel.imageURL {

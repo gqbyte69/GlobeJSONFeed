@@ -20,6 +20,16 @@ final class AnimeDetailsViewModel: AnimeDetailsViewModelProtocol {
 extension AnimeDetailsViewModel {
   var titleText: String? { anime.title_english }
 
+  var genreText: String? {
+    let names = anime.genres.compactMap { $0.name }
+    return String(format: "Genre: %@", names.joined(separator: ", "))
+  }
+
+  var studiosText: String? {
+    let names = anime.studios.compactMap { $0.name }
+    return String(format: "Studios: %@", names.joined(separator: ", "))
+  }
+
   var synopsisText: String? { anime.synopsis }
 
   var imageURL: URL? {
