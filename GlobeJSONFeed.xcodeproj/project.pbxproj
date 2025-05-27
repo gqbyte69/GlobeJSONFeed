@@ -205,7 +205,6 @@
 		5E47AC872DE3436C008B5F14 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				5E47ACA42DE3452B008B5F14 /* Config */,
 				5E47AC7E2DE3436C008B5F14 /* Core */,
 				5E47AC862DE3436C008B5F14 /* Home */,
 			);
@@ -215,6 +214,7 @@
 		5E47AC8D2DE3436C008B5F14 /* GlobeJSONFeed */ = {
 			isa = PBXGroup;
 			children = (
+				5E47ACA42DE3452B008B5F14 /* Config */,
 				5E826D442DE5C885001CB223 /* Extensions */,
 				5E47AC872DE3436C008B5F14 /* Modules */,
 				5E47AC882DE3436C008B5F14 /* AppDelegate.swift */,
