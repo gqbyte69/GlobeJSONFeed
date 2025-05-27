@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="76" id="SfQ-6n-aEF" customClass="AnimeCell" customModule="GlobeJSONFeed" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SfQ-6n-aEF" id="5Ij-kV-ws1">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbnailPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="jsY-qq-X1m">
+                        <rect key="frame" x="16" y="13" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="DbO-45-IQZ"/>
+                            <constraint firstAttribute="height" constant="50" id="quy-qa-1UG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjG-az-7Df">
+                        <rect key="frame" x="74" y="27.5" width="324" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="vjG-az-7Df" secondAttribute="trailing" constant="16" id="04f-mF-x6Z"/>
+                    <constraint firstItem="vjG-az-7Df" firstAttribute="leading" secondItem="jsY-qq-X1m" secondAttribute="trailing" constant="8" id="Zms-fq-1lz"/>
+                    <constraint firstItem="jsY-qq-X1m" firstAttribute="leading" secondItem="5Ij-kV-ws1" secondAttribute="leading" constant="16" id="bNK-J8-Uoa"/>
+                    <constraint firstItem="vjG-az-7Df" firstAttribute="top" secondItem="5Ij-kV-ws1" secondAttribute="top" constant="27.5" id="hCw-bK-ii4"/>
+                    <constraint firstAttribute="bottom" secondItem="vjG-az-7Df" secondAttribute="bottom" constant="27.5" id="n2Q-eZ-D9Q"/>
+                    <constraint firstItem="jsY-qq-X1m" firstAttribute="centerY" secondItem="5Ij-kV-ws1" secondAttribute="centerY" id="nd8-fx-hHq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="jsY-qq-X1m" id="m4d-5I-qXN"/>
+                <outlet property="titleLabel" destination="vjG-az-7Df" id="Bd2-MU-hR3"/>
+            </connections>
+            <point key="canvasLocation" x="37.681159420289859" y="45.535714285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="thumbnailPlaceholder" width="208" height="208"/>
+    </resources>
+</document>
